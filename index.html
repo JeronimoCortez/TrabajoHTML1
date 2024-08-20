@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practico HTML</title>
+
+  <style>
+    h1 {
+      border: 1px solid red;
+    }
+
+    h2 {
+      background-color: red;
+    }
+
+    table {
+      width: 80%;
+      margin: 0 auto;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 2px solid black;
+    }
+
+    tfoot {
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#contexto">Contexto</a></li>
+        <li><a href="#encabezados">Encabezados</a></li>
+        <li><a href="#divisiones">Divisiones</a></li>
+        <li><a href="#listas-enlaces">Listas y Enlaces</a></li>
+        <li><a href="#multimedia">Multimedia</a></li>
+        <li><a href="#tablas">Tablas</a></li>
+        <li><a href="#formulario">Formularios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contexto">
+      <h1>1.Estructura basica del documento HTML</h1>
+      <p>Este documento HTML tiene una estructura basica que incluye la declaracion del DOCTYPE, etiquetas de metadatos
+        y
+        un
+        titulo</p>
+    </section>
+
+    <section id="encabezados">
+      <h1>2.Encabezados y propiedades del texto (H1)</h1>
+      <h2>Esto es un h2</h2>
+      <h3>Esto es un h3</h3>
+      <h4>Esto es un h4</h4>
+      <h5>Esto es un h5</h5>
+      <h6>Esto es un h6</h6>
+      <p><b>Este es un texto en negrita</b></p>
+      <p><em>Este es un texto en cursiva</em></p>
+      <p><u>Este es un texto subrayado</u></p>
+    </section>
+
+    <section id="divisiones">
+      <h2>3.Divisiones y agrupacion de contenido</h2>
+      <div>
+        <h3>Seccion 1</h3>
+        <p>Contenido de la primera seccion en un div</p>
+      </div>
+      <div>
+        <h3>Seccion 2</h3>
+        <p>Contenido de la segunda seccion en un div</p>
+      </div>
+    </section>
+
+    <section id="listas-enlaces">
+      <h2>4.Enlaces y listas</h2>
+      <h3>Enlaces externos, tipos de listas</h3>
+      <h4>Lista ordenada</h4>
+      <ol>
+        <li>
+          <p>Enlaces a documentacion listas ordenadas <a
+              href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol" target="_blank">Click aqui</a></p>
+        </li>
+        <li>
+          <p>Enlaces a documentacion listas no ordenadas <a
+              href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul" target="_blank">Click aqui</a></p>
+        </li>
+      </ol>
+
+      <h3>Enlaces internos, navegar sobre nuestra Web</h3>
+      <h4>Lista no ordenada</h4>
+      <ul>
+        <li><a href="#contexto">Ir a seccion del contexto</a></li>
+        <li><a href="#encabezados">Ir a seccion encabezados</a></li>
+        <li><a href="#divisiones">Ir a seccion divisiones</a></li>
+      </ul>
+    </section>
+
+    <section id="multimedia">
+      <h2>5. Elementos multimedia</h2>
+      <img src="./Logo-html.png" alt="Imagen logo html" width="300px" height="300px">
+      <br>
+      <video src="./videoplayback.mp4" controls></video>
+      <br>
+      <audio src="./audio.mp3" controls></audio>
+    </section>
+
+    <section id="tablas">
+      <h2>6. Tablas</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>columna 1</th>
+            <th>columna 2</th>
+            <th>columna 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>fila 1</td>
+            <td>fila 1</td>
+            <td>fila 1</td>
+          </tr>
+          <tr>
+            <td>fila 2</td>
+            <td>fila 2</td>
+            <td>fila 2</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>total 1</td>
+            <td>total 2</td>
+            <td>total 3</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section id="formulario">
+      <h2>7. Formularios</h2>
+      <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre completo"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="@gmail.com"><br><br>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje"></textarea><br><br>
+        <input type="submit" value="Enviar">
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy;Jeronimo Felipe Cortez 2024</p>
+  </footer>
+</body>
+
+</html>
